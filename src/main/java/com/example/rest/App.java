@@ -75,7 +75,7 @@ public class App {
  
     /**
      * Performs a call to the database.
-     *//
+     */
     private static void runDatabaseQuery() {
         String host = "myHost";
         String database = "myDatabase";
