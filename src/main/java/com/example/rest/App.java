@@ -49,16 +49,15 @@ public class App {
     /**
      * Performs a simple GET request and prints the result to the log.
      */
-    private static void runGetRequest() {
-     for (int i=9;i>=0;i--){
-      //sample URL
-      //String url = "http://ip.jsontest.com/";
-      //String url = "http://140.86.15.104:3000/shield/33/45/red/smorale5/";
-      String YY=String.valueOf(i); 
-      String url="http://140.86.15.104:3000/fighters/45/"+YY+"/red/smorale5/";
-      CloseableHttpResponse response = null;
-
-              try {
+ private static void runGetRequest() {
+  for (int i=9;i>=0;i--){
+   //sample URL
+   //String url = "http://ip.jsontest.com/";
+   //String url = "http://140.86.15.104:3000/shield/33/45/red/smorale5/";
+   String YY=String.valueOf(i); 
+   String url="http://140.86.15.104:3000/fighters/45/"+YY+"/red/smorale5/";
+   CloseableHttpResponse response = null;
+   try {
                   CloseableHttpClient httpclient = HttpClients.createDefault();
                   HttpGet httpGet = new HttpGet(url);
                   response = httpclient.execute(httpGet);
@@ -75,8 +74,8 @@ public class App {
                       System.out.println(ie);
                   }
               } 
-     }
-    }
+  }
+ }
  
     /**
      * Performs a call to the database.
