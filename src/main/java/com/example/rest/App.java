@@ -54,7 +54,7 @@ public class App {
                for (int i=9; i>=0; i--)
      {
         String dummyStr = String.valueOf(i); 
-        String url = "http://140.86.15.104:3000/fighters/45/" + dummyStr + "/red/smorale5/";
+        //String url = "http://140.86.15.104:3000/fighters/45/" + dummyStr + "/red/smorale5/";
 
         CloseableHttpResponse response = null;
 
