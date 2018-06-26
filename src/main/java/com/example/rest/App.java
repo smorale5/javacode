@@ -14,7 +14,8 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.util.EntityUtils;
  
-@SpringBootApplication
+@SpringBootApplication;
+
 public class App {
  
     // Get PORT and HOST from Environment or set default
@@ -50,7 +51,8 @@ public class App {
      */
     private static void runGetRequest() {
  
-     for (int i=9; i>=0; i--){
+     for (int i=9; i>=0; i--)
+     {
  	         String YY = String.valueOf(i); 
  	         String url = "http://140.86.15.104:3000/fighters/45/" + YY + "/red/smorale5/";
          	      
