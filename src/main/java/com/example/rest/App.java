@@ -50,10 +50,13 @@ public class App {
      * Performs a simple GET request and prints the result to the log.
      */
     private static void runGetRequest() {
- 
-     String url="http://140.86.15.104:3000/fighters/45/0/red/smorale5/";
-     
-     CloseableHttpResponse response = null;
+     for (int i=9;i>=0;i--){
+      //sample URL
+      //String url = "http://ip.jsontest.com/";
+      //String url = "http://140.86.15.104:3000/shield/33/45/red/smorale5/";
+      String YY=String.valueOf(i); 
+      String url="http://140.86.15.104:3000/fighters/45/"+YY+"/red/smorale5/";
+      CloseableHttpResponse response = null;
 
               try {
                   CloseableHttpClient httpclient = HttpClients.createDefault();
@@ -71,7 +74,8 @@ public class App {
                   } catch (IOException ie) {
                       System.out.println(ie);
                   }
-              }  
+              } 
+     }
     }
  
     /**
