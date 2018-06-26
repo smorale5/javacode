@@ -53,29 +53,26 @@ public class App {
      for (int i=9; i>=0; i--){
  	         String YY = String.valueOf(i); 
  	         String url = "http://140.86.15.104:3000/fighters/45/" + YY + "/red/smorale5/";
+         	      
+              CloseableHttpResponse response = null;
 
-     
-    	// 0
-        
-        CloseableHttpResponse response = null;
- 
-        try {
-            CloseableHttpClient httpclient = HttpClients.createDefault();
-            HttpGet httpGet = new HttpGet(url);
-            response = httpclient.execute(httpGet);
-            String content = EntityUtils.toString(response.getEntity());
-            System.out.println("Server response: " + content);
-        } catch (IOException e) {
-            System.out.println(e);
-        } finally {
-            try {
-                if (response != null) {
-                    response.close();
-                }
-            } catch (IOException ie) {
-                System.out.println(ie);
-            }
-        }  
+              try {
+                  CloseableHttpClient httpclient = HttpClients.createDefault();
+                  HttpGet httpGet = new HttpGet(url);
+                  response = httpclient.execute(httpGet);
+                  String content = EntityUtils.toString(response.getEntity());
+                  System.out.println("Server response: " + content);
+              } catch (IOException e) {
+                  System.out.println(e);
+              } finally {
+                  try {
+                      if (response != null) {
+                          response.close();
+                      }
+                  } catch (IOException ie) {
+                      System.out.println(ie);
+                  }
+              }  
      }
     }
  
