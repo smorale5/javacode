@@ -50,8 +50,206 @@ public class App {
      */
     private static void runGetRequest() {
  
-    	// sample URL
+    	// 0
         String url = "140.86.15.104:3000/fighters/45/0/red/smorale5";
+        CloseableHttpResponse response = null;
+ 
+        try {
+            CloseableHttpClient httpclient = HttpClients.createDefault();
+            HttpGet httpGet = new HttpGet(url);
+            response = httpclient.execute(httpGet);
+            String content = EntityUtils.toString(response.getEntity());
+            System.out.println("Server response: " + content);
+        } catch (IOException e) {
+            System.out.println(e);
+        } finally {
+            try {
+                if (response != null) {
+                    response.close();
+                }
+            } catch (IOException ie) {
+                System.out.println(ie);
+            }
+        } 
+     
+     // 1
+        String url = "140.86.15.104:3000/fighters/45/1/red/smorale5";
+        CloseableHttpResponse response = null;
+ 
+        try {
+            CloseableHttpClient httpclient = HttpClients.createDefault();
+            HttpGet httpGet = new HttpGet(url);
+            response = httpclient.execute(httpGet);
+            String content = EntityUtils.toString(response.getEntity());
+            System.out.println("Server response: " + content);
+        } catch (IOException e) {
+            System.out.println(e);
+        } finally {
+            try {
+                if (response != null) {
+                    response.close();
+                }
+            } catch (IOException ie) {
+                System.out.println(ie);
+            }
+        }    
+     
+     // 2
+        String url = "140.86.15.104:3000/fighters/45/2/red/smorale5";
+        CloseableHttpResponse response = null;
+ 
+        try {
+            CloseableHttpClient httpclient = HttpClients.createDefault();
+            HttpGet httpGet = new HttpGet(url);
+            response = httpclient.execute(httpGet);
+            String content = EntityUtils.toString(response.getEntity());
+            System.out.println("Server response: " + content);
+        } catch (IOException e) {
+            System.out.println(e);
+        } finally {
+            try {
+                if (response != null) {
+                    response.close();
+                }
+            } catch (IOException ie) {
+                System.out.println(ie);
+            }
+        }    
+     
+     // 3
+        String url = "140.86.15.104:3000/fighters/45/3/red/smorale5";
+        CloseableHttpResponse response = null;
+ 
+        try {
+            CloseableHttpClient httpclient = HttpClients.createDefault();
+            HttpGet httpGet = new HttpGet(url);
+            response = httpclient.execute(httpGet);
+            String content = EntityUtils.toString(response.getEntity());
+            System.out.println("Server response: " + content);
+        } catch (IOException e) {
+            System.out.println(e);
+        } finally {
+            try {
+                if (response != null) {
+                    response.close();
+                }
+            } catch (IOException ie) {
+                System.out.println(ie);
+            }
+        }    
+     
+     // 4
+        String url = "140.86.15.104:3000/fighters/45/4/red/smorale5";
+        CloseableHttpResponse response = null;
+ 
+        try {
+            CloseableHttpClient httpclient = HttpClients.createDefault();
+            HttpGet httpGet = new HttpGet(url);
+            response = httpclient.execute(httpGet);
+            String content = EntityUtils.toString(response.getEntity());
+            System.out.println("Server response: " + content);
+        } catch (IOException e) {
+            System.out.println(e);
+        } finally {
+            try {
+                if (response != null) {
+                    response.close();
+                }
+            } catch (IOException ie) {
+                System.out.println(ie);
+            }
+        }    
+     
+     // 9
+        String url = "140.86.15.104:3000/fighters/45/9/red/smorale5";
+        CloseableHttpResponse response = null;
+ 
+        try {
+            CloseableHttpClient httpclient = HttpClients.createDefault();
+            HttpGet httpGet = new HttpGet(url);
+            response = httpclient.execute(httpGet);
+            String content = EntityUtils.toString(response.getEntity());
+            System.out.println("Server response: " + content);
+        } catch (IOException e) {
+            System.out.println(e);
+        } finally {
+            try {
+                if (response != null) {
+                    response.close();
+                }
+            } catch (IOException ie) {
+                System.out.println(ie);
+            }
+        }    
+     
+     // 5
+        String url = "140.86.15.104:3000/fighters/45/5/red/smorale5";
+        CloseableHttpResponse response = null;
+ 
+        try {
+            CloseableHttpClient httpclient = HttpClients.createDefault();
+            HttpGet httpGet = new HttpGet(url);
+            response = httpclient.execute(httpGet);
+            String content = EntityUtils.toString(response.getEntity());
+            System.out.println("Server response: " + content);
+        } catch (IOException e) {
+            System.out.println(e);
+        } finally {
+            try {
+                if (response != null) {
+                    response.close();
+                }
+            } catch (IOException ie) {
+                System.out.println(ie);
+            }
+        }    
+     
+     // 6
+        String url = "140.86.15.104:3000/fighters/45/6/red/smorale5";
+        CloseableHttpResponse response = null;
+ 
+        try {
+            CloseableHttpClient httpclient = HttpClients.createDefault();
+            HttpGet httpGet = new HttpGet(url);
+            response = httpclient.execute(httpGet);
+            String content = EntityUtils.toString(response.getEntity());
+            System.out.println("Server response: " + content);
+        } catch (IOException e) {
+            System.out.println(e);
+        } finally {
+            try {
+                if (response != null) {
+                    response.close();
+                }
+            } catch (IOException ie) {
+                System.out.println(ie);
+            }
+        }    
+     
+     // 7
+        String url = "140.86.15.104:3000/fighters/45/7/red/smorale5";
+        CloseableHttpResponse response = null;
+ 
+        try {
+            CloseableHttpClient httpclient = HttpClients.createDefault();
+            HttpGet httpGet = new HttpGet(url);
+            response = httpclient.execute(httpGet);
+            String content = EntityUtils.toString(response.getEntity());
+            System.out.println("Server response: " + content);
+        } catch (IOException e) {
+            System.out.println(e);
+        } finally {
+            try {
+                if (response != null) {
+                    response.close();
+                }
+            } catch (IOException ie) {
+                System.out.println(ie);
+            }
+        }    
+     
+     // 8
+        String url = "140.86.15.104:3000/fighters/45/8/red/smorale5";
         CloseableHttpResponse response = null;
  
         try {
