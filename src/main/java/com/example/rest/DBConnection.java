@@ -30,7 +30,7 @@ public class DBConnection {
             connection = DriverManager.getConnection(jdbcURL);
             statement = connection.createStatement();
             
-            // sample SQL query
+            // sample secret SQL query
             String sqlQuery = "select * from SecretTable;";
             resultSet = statement.executeQuery(sqlQuery);
             getResultSet(resultSet);
